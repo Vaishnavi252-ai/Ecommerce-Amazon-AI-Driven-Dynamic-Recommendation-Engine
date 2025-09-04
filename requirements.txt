@@ -1,0 +1,20 @@
+# Core Python dependencies
+numpy
+pandas
+scikit-learn
+scipy
+
+# Data visualization (optional, for analysis/debugging)
+matplotlib
+seaborn
+
+# Web framework
+flask
+flask-cors
+
+# Recommendation system libraries
+scikit-surprise
+lightfm
+
+# For API testing
+requests
