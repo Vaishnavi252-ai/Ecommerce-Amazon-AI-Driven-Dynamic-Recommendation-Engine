@@ -29,7 +29,7 @@ def compute_item_similarity(interaction_matrix):
 def recommend_items(user_id, interaction_matrix, item_sim_matrix, top_n = 5):
     
     if user_id not in interaction_matrix.index:
-        return[]   # user not found
+        return []   # user not found
     
     # User’s ratings
     user_ratings = interaction_matrix.loc[user_id]
@@ -44,6 +44,5 @@ def recommend_items(user_id, interaction_matrix, item_sim_matrix, top_n = 5):
     #pick first top 5 items 
     recommended_items = scores.sort_values(ascending=False).head(top_n)
     
-    return recommend_items
-    
-    
+    return recommended_items
+

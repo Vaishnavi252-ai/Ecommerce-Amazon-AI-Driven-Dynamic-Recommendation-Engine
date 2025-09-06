@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-def load_and_clean_data(path="data/amazon_data.csv"):
+def load_and_clean_data(path="data/amazon.csv"):
     df = pd.read_csv(path)
 
     print("Initial shape:", df.shape)
